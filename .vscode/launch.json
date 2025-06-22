@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "调试 ES Tool",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/main.go",
+            "args": [
+                "-url", "http://127.0.0.1:9200",
+                "-mode", "export",
+                "-index", "products",
+                "-username", "",
+                "-password", "",
+                "-output", "products.jsonl"
+            ],
+            "env": {},
+            "showLog": true
+        }
+    ]
+} 
